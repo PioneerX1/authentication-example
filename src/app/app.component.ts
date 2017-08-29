@@ -16,7 +16,7 @@ export class AppComponent {
 
   constructor(public authService: AuthenticationService) {
     this.authService.user.subscribe(user => {
-      console.log(user);
+      // console.log(user);
       if (user == null) {
         this.isLoggedIn = false;
       } else {
@@ -27,11 +27,11 @@ export class AppComponent {
   }
 
   login() {
-    this.user.authService.login();
+    this.authService.login();
   }
 
   logout() {
-    this.user.authService.logout();
+    this.authService.logout();
   }
 
 }
