@@ -21,7 +21,7 @@ export class AppComponent {
       // console.log(user);
       if (user == null) {
         this.isLoggedIn = false;
-        this.router.navigate(['public']);
+        // this.router.navigate(['public']);
       } else {
         this.isLoggedIn = true;
         this.userName = user.displayName;
